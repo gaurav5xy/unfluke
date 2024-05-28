@@ -17,7 +17,7 @@ function Table() {
         <tr key={index} className="even:bg-gray-100">
             <th className="px-4 py-2 border">{index + 1}</th>
             {row.map((item, i) => <td key={i} className="px-4 py-2 border">{item}</td>)}
-            <td className="px-4 py-2 border">{row[5] === '-' ? 'View' : 'Buy'}</td>
+            <td className="px-4 py-2 border text-blue-600">{row[5] === '-' ? 'View' : 'Buy'}</td>
         </tr>
     );
 
